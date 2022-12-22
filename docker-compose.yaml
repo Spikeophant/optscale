@@ -120,7 +120,7 @@ services:
       - HX_KATARA_ROLE=scheduler
     image: katara_worker
     depends_on:
-      - katara_service
+      - katara_service_api
   resource_discovery_scheduler:
       networks:
         - nuchbee
